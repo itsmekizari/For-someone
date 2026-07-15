@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flip Book Reader</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="loading">
+    <div class="loader"></div>
+    <p>Loading Book...</p>
+</div>
+
+<header>
+
+<button id="prevPage">◀</button>
+
+<div class="title">
+📖 Flip Book Reader
+</div>
+
+<button id="nextPage">▶</button>
+
+</header>
+
+<div id="toolbar">
+
+<button id="zoomIn">＋</button>
+
+<button id="zoomOut">－</button>
+
+<button id="fullscreen">⛶</button>
+
+<button id="bookmark">🔖</button>
+
+<button id="theme">🌙</button>
+
+<input
+id="search"
+type="text"
+placeholder="Search..."
+>
+
+<span id="pageInfo">
+1 / 1
+</span>
+
+</div>
+
+<div id="bookContainer">
+
+<div id="book"></div>
+
+</div>
+
+<div id="toast">
+Saved ✔
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
